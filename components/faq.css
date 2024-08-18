@@ -6,22 +6,21 @@
   gap:var(--s600);
   display: grid;
   grid-template-columns: 4fr 5fr;
-  max-width: 100%;
 }
 #faq .info {
-  max-width: 550px;
+  max-width: 34.5rem;
 }
 #faq > h2 {
   margin-bottom: var(--s200);
   display: inline-block;
 }
 .faq-card:not(:first-child) {
-  border-bottom: 1px solid #555555;
+  border-bottom: var(--px1) solid #555555;
   padding: var(--s500) 0 var(--s400) 0;
 }
 .faq-card:first-child {
   padding-bottom: var(--s400);
-  border-bottom: 1px solid #555555;
+  border-bottom: var(--px1) solid #555555;
 }
 .faq-card > input {
   display: none;
@@ -40,8 +39,8 @@
   position: absolute;
   top:0;
   right:0;
-  height: 35px;
-  width: 35px;
+  height: 1.7rem;
+  width: 1.7rem;
   transform: rotate(0);
   transition: transform 300ms;
 
@@ -104,6 +103,6 @@ span.ico-phone::before {
     padding: var(--s800) var(--s500);
   }
   #faq h3 {
-    padding-right: var(--s600);
+    padding-right: var(--s700);
   }
 }

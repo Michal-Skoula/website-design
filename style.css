@@ -11,7 +11,7 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-  font-size:16px;
+  font-size:20px;
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -59,7 +59,12 @@
   --s800: 4rem;     /* 64px */
   --s900: 6rem;     /* 96px */
 }
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 90rem) {
+  * {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 30rem) {
   :root {
     --h1: 1.8rem;
     --h2: 1.6rem;
