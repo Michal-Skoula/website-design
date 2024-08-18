@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michal Škoula - Webový vývojář | Design, vývoj | WordPress | Online, Plzeň</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="components/hero.css">
+  <link rel="stylesheet" href="components/projects.css">
+  <link rel="stylesheet" href="components/nav.css">
+</head>
+<body>
+<nav id="main-menu">
+  <input type="checkbox" id="btn-menu-hero">
+  <ul class="column">
+    <li><a href="#">O mně</a></li>
+    <li><a href="#">Projekty</a></li>
+    <li><a href="#">O spolupráci</a></li>
+    <li><a href="#">Kontakt</a></li>
+    <li class="menu">
+      <label class="btn-menu-hero" for="btn-menu-hero" aria-controls="main-menu" aria-expanded="false">
+        <img src="assets/ico-close.svg" alt="">
+      </label>
+      
+    </li>
+  </ul>
+</nav>
+  <!-- COMPONENT: hero -->
+  <div id="hero">
+    <div class="max-content-width">
+      <header id="hero-nav" class="row space-between align-center">
+        <a class="hero-logo" href="/"><img id="hero-logo" src="assets/logo_light.svg" alt="Logo Michal Škoula"></a>
+        <nav>
+          <ul class="row">
+            <li><a href="#">O mně</a></li>
+            <li><a href="#">Projekty</a></li>
+            <li><a href="#">O spolupráci</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a class="button-primary" href="#">Rezervovat schůzku</a></li>
+            <li class="menu">
+              <label class="btn-menu-hero" for="btn-menu-hero" aria-controls="main-menu" aria-expanded="false">
+                <img src="assets/ico-hamburger.svg" alt="">
+              </label>
+              
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero-content row">
+        <div class="text">
+          <h1>Tvořím špičkové weby, které přináší výsledky.</h1>
+          <p>Pomáhám společnostem a podnikatelům prezentovat se a vydělávat online pomocí skvělých webových řešení.</p>
+          <a class="button-primary desktop-display-btn" href="#">Rezervovat schůzku</a>
+        </div>
+        <div id="hero-img">
+          <img  src="assets/hero-img.png" alt="Picture">
+          <a class="button-primary mobile-display-btn" href="#">Rezervovat schůzku</a>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div class="gradient-bg"> 
+    <div class="max-content-width"><!-- Component you place others into --> 
+      <!-- COMPONENT: Projects showcase 2 wide -->
+      <div id="projects-showcase">
+        <h2>Úspěšné projekty</h2>
+        <div class="row space-between">
+          <p>Vybrané projekty, které posunuly mé klienty v jejich podnikání o level výš.</p>
+          <a href="#">Zobrazit všechny <span class="bold">&rarr;</span></a>
+          
+          <!-- Repeater field -->
+          <a href="#">
+            <article class="project">
+              <h3>Forza Juniors</h3>
+              <p>Nový web pro začínající společnost</p>
+              <!-- Before + After na zobrazeni obrazku -->
+            </article>
+          </a>
+          <a href="#">
+            <article class="project">
+              <h3>Forza Juniors</h3>
+              <p>Nový web pro začínající společnost</p>
+              <!-- Before + After na zobrazeni obrazku -->
+            </article>
+          </a>
+          <!-- End Repeater field -->
+
+        </div>
+      </div>
+  
+
+      <!-- COMPONENT: testimonials -->
+      <div id="testimonials">
+        <h2>Názory mých klientů</h2>
+
+        <!-- Repeater field -->
+        <!-- Sem ::before quotes obrazek -->
+        <article class="testimonial">
+          <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+          <div class="author">
+            <p class="strong">Bc. Pavel Zahradník</p>
+            <p>Forza Juniors</p>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+          <div class="author">
+            <p class="strong">Bc. Pavel Zahradník</p>
+            <p>Forza Juniors</p>
+          </div>
+        </article>
+        <article class="testimonial">
+          <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+          <div class="author">
+            <p class="strong">Bc. Pavel Zahradník</p>
+            <p>Forza Juniors</p>
+          </div>
+        </article>
+        <!-- End Repeater field -->
+      </div>
+    </div>
+  </div>
+    
+
+  <!-- COMPONENT: faq -->
+  <div id="faq">
+    <div class="info">
+      <h2>Časté dotazy</h2>
+      <p>V případě dalších otázek mi neváhejte zavolat na číslo <span class="ico-phone"><a href="#">704 502 951</a></span> nebo mi napište email na adresu <span class="ico-mail"><a href="#">michal@skoula.com</a></span></p>
+    </div>
+    <!-- Repeater field -->
+    <div class="faq-card"> <!-- Dont forget to auto increment here!! -->
+      <input type="checkbox" id="faq1" class="faq-checkbox" aria-expanded="false" aria-controls="answer1"> 
+      <label for="faq1" class="faq-question"> 
+        <h3>Jak dlouho zabere tvorba webu?</h3>
+      </label>
+      <p id="answer1" class="faq-answer">Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují. Jenom tak klidně levitují ve vzduchu. </p>
+    </div>
+    <div class="faq-card"> <!-- Dont forget to auto increment here!! -->
+      <input type="checkbox" id="faq2" class="faq-checkbox" aria-expanded="false" aria-controls="answer2"> 
+      <label for="faq2" class="faq-question"> 
+        <h3>Jak dlouho zabere tvorba webu?</h3>
+      </label>
+      <p id="answer2" class="faq-answer">Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují. Jenom tak klidně levitují ve vzduchu. </p>
+    </div>
+    <!-- End repeater field -->
+  </div>
+  
+</body>
+</html>
