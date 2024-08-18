@@ -1,3 +1,4 @@
 - [ ] Create nice showcases for projects
 - [ ] Make new "See more" icon
 - [ ] Link icon show on mobile always with media query
+- remove overflow hidden on body when done with design

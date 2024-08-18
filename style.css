@@ -76,7 +76,8 @@
 
 body {
   background-color: var(--clr-bg);
-  color:var(--clr-paragraph)
+  color:var(--clr-paragraph);
+  overflow: hidden;
 }
 h1, .h1 {
   font-size: var(--h1);
