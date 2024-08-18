@@ -6,6 +6,9 @@
   overflow: hidden;
 }
 /* Fog for hero section */
+#hero .max-content-width {
+  padding: 0 var(--s700);
+}
 #hero .max-content-width::before {
   content: url(../assets/particles.svg);
   width: 1100px;
@@ -62,7 +65,7 @@ label.btn-menu-hero img {
 .hero-content {
   display: flex;
   margin-top:var(--s700);
-  gap:var(--s900);
+  justify-content: space-between;
 }
 .hero-content .text {
   max-width: 33.125rem /* 530px */;
@@ -80,7 +83,7 @@ label.btn-menu-hero img {
 }
 #hero-img > img {
   /* position: absolute; */
-  max-width: 450px;
+  max-width: 28rem;
   right:0;
   z-index: 0;
 }
@@ -95,7 +98,9 @@ label.btn-menu-hero img {
   bottom:calc(var(--s900) * -1);
 }
 .mobile-display-btn {
+  position: relative;
   display: none;
+  z-index: 100;
   /* Second button that displays under the image for mobile */
 }
 #main-menu {
@@ -112,6 +117,9 @@ label.btn-menu-hero img {
   #hero {
     padding-bottom: 0;
   }
+  #hero .max-content-width {
+    padding: 0;
+  }
   .hero-content {
     justify-content: center;
     flex-direction: column;
@@ -122,7 +130,7 @@ label.btn-menu-hero img {
   #hero-img {
     margin: 0 auto;
     width: fit-content;
-    min-height: 250px;
+    min-height: 15.625rem;
   }
   #hero-img > img {
     width: 100%;
@@ -180,10 +188,13 @@ label.btn-menu-hero img {
 }
 @media screen and (max-width: 30rem) {
   #hero .text {
-    max-width: 350px;
+    max-width: 22rem;
   }
   #hero {
-    padding: var(--s600) var(--s400)
+    padding: var(--s600) var(--s400) var(--s400) var(--s400);
+  }
+  .hero-content {
+    margin-top: var(--s500);
   }
   #hero .button-primary {
     width: 100%;

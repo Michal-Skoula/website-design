@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="components/hero.css">
   <link rel="stylesheet" href="components/projects.css">
   <link rel="stylesheet" href="components/nav.css">
+  <link rel="stylesheet" href="components/testimonials.css">
 </head>
 <body>
 <nav id="main-menu">
@@ -49,7 +50,7 @@
       <div class="hero-content row">
         <div class="text">
           <h1>Tvořím špičkové weby, které přináší výsledky.</h1>
-          <p>Pomáhám společnostem a podnikatelům prezentovat se a vydělávat online pomocí skvělých webových řešení.</p>
+          <p>Pomáhám společnostem a jednotlivcům prezentovat se a vydělávat online pomocí skvělých webových řešení.</p>
           <a class="button-primary desktop-display-btn" href="#">Rezervovat schůzku</a>
         </div>
         <div id="hero-img">
@@ -67,60 +68,71 @@
       <!-- COMPONENT: Projects showcase 2 wide -->
       <div id="projects-showcase">
         <h2>Úspěšné projekty</h2>
-        <div class="row space-between">
+        <div class="projects-heading row space-between">
           <p>Vybrané projekty, které posunuly mé klienty v jejich podnikání o level výš.</p>
           <a href="#">Zobrazit všechny <span class="bold">&rarr;</span></a>
+        </div>
+        <div id="projects-grid">
+          <article class="project">
+            <a href="#">
+              <h3>Forza Juniors</h3>
+              <p>Nový web pro začínající společnost</p>
+              <img class="iphone" src="assets/iphone_mockup.png" alt="">
+              <!-- Before + After na zobrazeni obrazku -->
+            </a>
+          </article>
+          <article class="project">
+            <a href="#">
+              <h3>Forza Juniors</h3>
+              <p>Nový web pro začínající společnost</p>
+              <img class="iphone" src="assets/iphone_mockup.png" alt="">
+              <!-- Before + After na zobrazeni obrazku -->
+            </a>
+          </article>
           
+          <!-- IDEA: bg color is set in ACF by user -->
+        </div>
           <!-- Repeater field -->
-          <a href="#">
-            <article class="project">
-              <h3>Forza Juniors</h3>
-              <p>Nový web pro začínající společnost</p>
-              <!-- Before + After na zobrazeni obrazku -->
-            </article>
-          </a>
-          <a href="#">
-            <article class="project">
-              <h3>Forza Juniors</h3>
-              <p>Nový web pro začínající společnost</p>
-              <!-- Before + After na zobrazeni obrazku -->
-            </article>
-          </a>
+          
           <!-- End Repeater field -->
 
-        </div>
+        
       </div>
   
 
       <!-- COMPONENT: testimonials -->
       <div id="testimonials">
-        <h2>Názory mých klientů</h2>
+        <div class="max-content-width">
+          <h2>Názory mých klientů</h2>
 
-        <!-- Repeater field -->
-        <!-- Sem ::before quotes obrazek -->
-        <article class="testimonial">
-          <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
-          <div class="author">
-            <p class="strong">Bc. Pavel Zahradník</p>
-            <p>Forza Juniors</p>
+          <!-- Repeater field -->
+          <!-- Sem ::before quotes obrazek -->
+          <div class="testimonials-grid">
+            <article class="testimonial">
+              <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+              <div class="author">
+                <p class="strong">Bc. Pavel Zahradník</p>
+                <p>Forza Juniors</p>
+              </div>
+            </article>
+            <article class="testimonial">
+              <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+              <div class="author">
+                <p class="strong">Bc. Pavel Zahradník</p>
+                <p>Forza Juniors</p>
+              </div>
+            </article>
+            <article class="testimonial">
+              <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+              <div class="author">
+                <p class="strong">Bc. Pavel Zahradník</p>
+                <p>Forza Juniors</p>
+              </div>
+            </article>
           </div>
-        </article>
-        <article class="testimonial">
-          <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
-          <div class="author">
-            <p class="strong">Bc. Pavel Zahradník</p>
-            <p>Forza Juniors</p>
-          </div>
-        </article>
-        <article class="testimonial">
-          <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
-          <div class="author">
-            <p class="strong">Bc. Pavel Zahradník</p>
-            <p>Forza Juniors</p>
-          </div>
-        </article>
-        <!-- End Repeater field -->
-      </div>
+          <!-- End Repeater field -->
+        </div>
+        </div>
     </div>
   </div>
     
