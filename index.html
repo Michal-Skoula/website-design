@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="components/projects.css">
   <link rel="stylesheet" href="components/nav.css">
   <link rel="stylesheet" href="components/testimonials.css">
+  <link rel="stylesheet" href="components/faq.css">
+  <link rel="stylesheet" href="components/bg-primary.css">
 </head>
 <body>
 <nav id="main-menu">
@@ -63,7 +65,7 @@
     </div>
   </div>
 
-  <div class="gradient-bg"> 
+  <div class="bg-primary"> 
     <div class="max-content-width"><!-- Component you place others into --> 
       <!-- COMPONENT: Projects showcase 2 wide -->
       <div id="projects-showcase">
@@ -139,26 +141,38 @@
 
   <!-- COMPONENT: faq -->
   <div id="faq">
-    <div class="info">
-      <h2>Časté dotazy</h2>
-      <p>V případě dalších otázek mi neváhejte zavolat na číslo <span class="ico-phone"><a href="#">704 502 951</a></span> nebo mi napište email na adresu <span class="ico-mail"><a href="#">michal@skoula.com</a></span></p>
+    <div class="max-content-width row">
+      <div class="info">
+        <h2>Časté dotazy</h2>
+        <p>V případě dalších otázek mi neváhejte zavolat na číslo <span class="ico-phone"><a href="#">704 502 951</a></span> nebo mi napište email na adresu <span class="ico-mail"><a href="#">michal@skoula.com</a></span>.</p>
+      </div>
+      <div class="questions">
+        <!-- Repeater field -->
+        <div class="faq-card"> <!-- Dont forget to auto increment here!! -->
+          <input type="checkbox" id="faq1" class="faq-checkbox" aria-expanded="false" aria-controls="answer1"> 
+          <label for="faq1" class="faq-question"> 
+            <h3>Jak dlouho zabere tvorba webu?</h3>
+          </label>
+          <p id="answer1" class="faq-answer">Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují. Jenom tak klidně levitují ve vzduchu. </p>
+        </div>
+        <div class="faq-card"> <!-- Dont forget to auto increment here!! -->
+          <input type="checkbox" id="faq2" class="faq-checkbox" aria-expanded="false" aria-controls="answer2"> 
+          <label for="faq2" class="faq-question"> 
+            <h3>Jak dlouho zabere tvorba webu?</h3>
+          </label>
+          <p id="answer2" class="faq-answer">Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují. Jenom tak klidně levitují ve vzduchu. </p>
+        </div>
+        <div class="faq-card"> <!-- Dont forget to auto increment here!! -->
+          <input type="checkbox" id="faq3" class="faq-checkbox" aria-expanded="false" aria-controls="answer3"> 
+          <label for="faq3" class="faq-question"> 
+            <h3>Jak dlouho zabere tvorba webu?</h3>
+          </label>
+          <p id="answer3" class="faq-answer">Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují. Jenom tak klidně levitují ve vzduchu. </p>
+        </div>
+        <!-- End repeater field -->
+      </div>
     </div>
-    <!-- Repeater field -->
-    <div class="faq-card"> <!-- Dont forget to auto increment here!! -->
-      <input type="checkbox" id="faq1" class="faq-checkbox" aria-expanded="false" aria-controls="answer1"> 
-      <label for="faq1" class="faq-question"> 
-        <h3>Jak dlouho zabere tvorba webu?</h3>
-      </label>
-      <p id="answer1" class="faq-answer">Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují. Jenom tak klidně levitují ve vzduchu. </p>
-    </div>
-    <div class="faq-card"> <!-- Dont forget to auto increment here!! -->
-      <input type="checkbox" id="faq2" class="faq-checkbox" aria-expanded="false" aria-controls="answer2"> 
-      <label for="faq2" class="faq-question"> 
-        <h3>Jak dlouho zabere tvorba webu?</h3>
-      </label>
-      <p id="answer2" class="faq-answer">Vítr skoro nefouká a tak by se na první pohled mohlo zdát, že se balónky snad vůbec nepohybují. Jenom tak klidně levitují ve vzduchu. </p>
-    </div>
-    <!-- End repeater field -->
+    
   </div>
   
 </body>

@@ -8,6 +8,15 @@
 #projects-showcase .projects-heading a {
   display: inline-block;
 }
+#projects-showcase .projects-heading a span {
+  /* transform: translateX(0); */
+  padding:0;
+  transition: padding 150ms;
+}
+#projects-showcase .projects-heading a:hover span {
+  /* transform: translateX(1.2); */
+  padding: 0 16px 0 0;
+}
 #projects-grid {
   /* background-color: aquamarine; */
   display: grid;

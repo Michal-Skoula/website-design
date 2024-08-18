@@ -210,6 +210,10 @@ label.btn-menu-hero img {
   }
   #main-menu .menu {
     top:var(--s600);
-    right:var(--s300);
+    right:var(--s400);
+  }
+  .hero-content .button-primary {
+    margin-top: 0;
+    margin-bottom: var(--s600)
   }
 }
