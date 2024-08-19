@@ -11,15 +11,17 @@
   <link rel="stylesheet" href="components/testimonials.css">
   <link rel="stylesheet" href="components/faq.css">
   <link rel="stylesheet" href="components/bg-primary.css">
+  <link rel="stylesheet" href="components/contact.css">
+  <link rel="stylesheet" href="components/footer.css">
 </head>
 <body>
 <nav id="main-menu">
   <input type="checkbox" id="btn-menu-hero">
   <ul class="column">
     <li><a href="#">O mně</a></li>
-    <li><a href="#">Projekty</a></li>
+    <li><a href="#projects-showcase">Projekty</a></li>
     <li><a href="#">O spolupráci</a></li>
-    <li><a href="#">Kontakt</a></li>
+    <li><a href="#contact">Kontakt</a></li>
     <li class="menu">
       <label class="btn-menu-hero" for="btn-menu-hero" aria-controls="main-menu" aria-expanded="false">
         <img src="assets/ico-close.svg" alt="">
@@ -36,10 +38,10 @@
         <nav>
           <ul class="row">
             <li><a href="#">O mně</a></li>
-            <li><a href="#">Projekty</a></li>
+            <li><a href="#projects-showcase">Projekty</a></li>
             <li><a href="#">O spolupráci</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a class="button-primary" href="#">Rezervovat schůzku</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+            <!-- <li><a class="button-primary" href="#">Rezervovat schůzku</a></li> -->
             <li class="menu">
               <label class="btn-menu-hero" for="btn-menu-hero" aria-controls="main-menu" aria-expanded="false">
                 <img src="assets/ico-hamburger.svg" alt="">
@@ -52,15 +54,13 @@
       <div class="hero-content row">
         <div class="text">
           <h1>Tvořím špičkové weby, které přináší výsledky.</h1>
-          <p>Pomáhám společnostem a jednotlivcům prezentovat se a vydělávat online pomocí skvělých webových řešení.</p>
-          <a class="button-primary desktop-display-btn" href="#">Rezervovat schůzku</a>
+          <p>Pomáhám společnostem a jednotlivcům prezentovat se a vydělávat online pomocí skvělých webů na míru.</p>
+          <a class="button-primary desktop-display-btn" href="#contact">Rezervovat schůzku</a>
         </div>
         <div id="hero-img">
           <img  src="assets/hero-img.png" alt="Picture">
-          <a class="button-primary mobile-display-btn" href="#">Rezervovat schůzku</a>
+          <a class="button-primary mobile-display-btn" href="#contact">Rezervovat schůzku</a>
         </div>
-        
-
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@
         <h2>Úspěšné projekty</h2>
         <div class="projects-heading row space-between">
           <p>Vybrané projekty, které posunuly mé klienty v jejich podnikání o level výš.</p>
-          <a href="#">Zobrazit všechny <span class="bold">&rarr;</span></a>
+          <a href="#">Všechny projekty <span class="bold">&rarr;</span></a>
         </div>
         <div id="projects-grid">
           <article class="project">
@@ -137,6 +137,7 @@
         </div>
     </div>
   </div>
+  <img class="divider-left" src="assets/divider-left.svg" alt="">
     
 
   <!-- COMPONENT: faq -->
@@ -172,8 +173,69 @@
         <!-- End repeater field -->
       </div>
     </div>
-    
   </div>
-  
+  <!-- COMPONENT:CONTACT -->
+  <div id="contact">
+    <h2>Pojďme se sejít!</h2>
+    <p>Rád vám pomůžu posunout vaši online prezentaci o level výš.<br>První schůzka je zcela nezávazná a zdarma.</p>
+    <div class="booking-window">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/michalskoula/meeting?background_color=14161b&text_color=ffffff&primary_color=386eeb" style="min-width:100%;height:700px;max-height: 100%;"></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- <img src="assets/vector_cta.svg" alt=" "> -->
+    </div>
+  </div>
+
+  <img style="margin-bottom: -6px;" src="assets/divider-right.svg" alt="">
+  <footer id="footer">
+    <div class="max-content-width column">
+      <div class="socials row space-between">
+        <img src="assets/logo_light.svg" alt="Logo Michal Škoula">
+        <div class="socials">
+          <a rel="nofollow" target="_blank" href="https://github.com/Michal-Skoula/">
+            <img src="assets/github-square.svg" alt="">
+          </a>
+          <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/michal-skoula/">
+            <img src="assets/linkedin-square.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="main-body row space-between">
+        <div class="cta column">
+          <h3>Tvořím špičkové weby na míru vašim potřebám.</h3>
+          <a class="button-primary" href="#contact">Rezervace schůzky</a>
+        </div>
+        <div class="links row space-between">
+          <div class="link column">
+            <b>Rozcestník</b>
+            <a href="#">Mapa webu</a>
+            <a href="#faq">Časté dotazy</a>
+            <a href="#projects">Projekty</a>
+            <a href="#">O mně</a>
+            <a href="#">O spolupráci</a>
+          </div>
+          <div class="link column">
+            <b>Dokumenty</b>
+            <a href="#">Zásady Cookies</a>
+            <a href="#">Zásady GDPR</a>
+            <a href="#">Ochrana osobních údajů</a>
+          </div>
+          <div class="link column">
+            <b>Kontakt</b>
+            <a target="_blank" rel="nofollow" class="ico-phone" href="tel:+420704502951">+420 704 502 951</a>
+            <a target="_blank" rel="nofollow" class="ico-mail" href="mailto:michal@skoula.com">michal@skoula.com</a>
+            <a target="_blank" class="ico-linkedin" rel="nofollow" href="https://www.linkedin.com/in/michal-skoula/">Navázat spojení</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="copyright row space-between">
+        <p>© Michal Škoula, 2024.</p>
+        <div class="row">
+          <p>IČ: 3434343</p>
+          <p>Jsem plátce DPH.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

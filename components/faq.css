@@ -2,7 +2,7 @@
   
 }
 #faq > .max-content-width {
-  padding: var(--s700);
+  padding: var(--s900) var(--s700);
   gap:var(--s600);
   display: grid;
   grid-template-columns: 4fr 5fr;
