@@ -127,7 +127,7 @@ button, .button-primary {
   color:var(--clr-white) !important;
   text-decoration: none !important;
   cursor:pointer;
-  transition: color 150ms, background-color 150ms !important;
+  transition: all 150ms;
   display: inline-block;
   text-align: center;
 
