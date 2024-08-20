@@ -5,7 +5,7 @@
 
  :root {
   --reanimate-on-scroll-by-default: 0;
-  --default-animation-duration: 500ms; 
+  --default-animation-duration: 400ms; 
   --default-animation-duration-step:250ms; 
   --transition-delay-step: 200ms; 
   --blur-strength: 3px; 
