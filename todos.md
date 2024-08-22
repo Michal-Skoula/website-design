@@ -3,3 +3,4 @@
 - [ ] Link icon show on mobile always with media query
 - [ ] remove overflow hidden on body when done with design
 - [ ] Unify padding on each section for each breakpoint
+- lazy load iframe
