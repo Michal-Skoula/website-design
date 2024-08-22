@@ -13,25 +13,36 @@
   <link rel="stylesheet" href="components/bg-primary.css">
   <link rel="stylesheet" href="components/contact.css">
   <link rel="stylesheet" href="components/footer.css">
+  <!-- Animations library -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Michal-Skoula/simple-scroll-animations@master/release/latest/styles.css">
+  <script defer src="https://cdn.jsdelivr.net/gh/Michal-Skoula/simple-scroll-animations@master/release/latest/script.js"></script>
+  <!-- Swiperjs -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-  <script defer src="animations.js"></script>
-  <link rel="stylesheet" href="animations.css">
 </head>
 <body>
 <nav id="main-menu">
   <input type="checkbox" id="btn-menu-hero">
   <ul class="column">
-    <li><a href="#">O mně</a></li>
-    <li><a href="#projects-showcase">Projekty</a></li>
-    <li><a href="#">O spolupráci</a></li>
-    <li><a href="#contact">Kontakt</a></li>
+    <li><a class="js-close-menu" href="#">O mně</a></li>
+    <li><a class="js-close-menu" href="#projects-showcase">Projekty</a></li>
+    <li><a class="js-close-menu" href="#">O spolupráci</a></li>
+    <li><a class="js-close-menu" href="#contact">Kontakt</a></li>
     <li class="menu">
       <label class="btn-menu-hero" for="btn-menu-hero" aria-controls="main-menu" aria-expanded="false">
         <img src="assets/ico-close.svg" alt="">
-      </label>
-      
+      </label> 
     </li>
   </ul>
+  <script defer>
+    const menuCloseCheck = document.getElementById('btn-menu-hero');
+    const menuCloseBtn = document.querySelectorAll('.js-close-menu');
+    menuCloseBtn.forEach((element) => {
+      element.addEventListener('click', () => {
+        menuCloseCheck.checked = false;
+      })
+    })
+  </script>
 </nav>
   <!-- COMPONENT: hero -->
   <div id="hero">
@@ -58,11 +69,17 @@
         <div class="text">
           <h1 class="animate fade-in staggered">Tvořím špičkové weby, které přináší výsledky.</h1>
           <p class="animate fade-in staggered">Pomáhám společnostem a jednotlivcům prezentovat se a vydělávat online pomocí skvělých webů na míru.</p>
-          <a class="animate fade-in staggered button-primary desktop-display-btn" href="#contact">Rezervovat schůzku</a>
+          <div class="animate fade-in staggered">
+            <a class="button-primary desktop-display-btn" href="#contact">Rezervovat schůzku</a>
+          </div>
+          
         </div>
         <div id="hero-img">
           <img class="animate fade-in delay300 duration200" src="assets/hero-img.png" alt="Picture">
-          <a class="animate bottom-to-top delay100 button-primary mobile-display-btn" href="#contact">Rezervovat schůzku</a>
+          <div class="animate bottom-to-top delay100">
+            <a class=" button-primary mobile-display-btn" href="#contact">Rezervovat schůzku</a>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -75,7 +92,10 @@
         <h2 class="animate left-to-right delay100">Úspěšné projekty</h2>
         <div class="projects-heading row space-between">
           <p class="animate left-to-right delay200">Vybrané projekty, které posunuly mé klienty v jejich podnikání o level výš.</p>
-          <a class="animate right-to-left delay200" href="#">Všechny projekty <span class="bold">&rarr;</span></a>
+          <div class="animate right-to-left delay200">
+            <a href="#">Všechny projekty <span class="bold">&rarr;</span></a>
+
+          </div>
         </div>
         <div id="projects-grid">
           <article class="project animate bottom-to-top staggered">
@@ -93,52 +113,62 @@
               <img class="iphone" src="assets/iphone_mockup.png" alt="">
               <!-- Before + After na zobrazeni obrazku -->
             </a>
-          </article>
-          
+          </article>  
           <!-- IDEA: bg color is set in ACF by user -->
         </div>
-          <!-- Repeater field -->
-          
-          <!-- End Repeater field -->
-
-        
       </div>
   
 
       <!-- COMPONENT: testimonials -->
       <div id="testimonials">
         <div class="max-content-width">
-          <h2 class="animate left-to-right">Názory mých klientů</h2>
-
+          <div class="swiper testimonialSwiper">
+          <h2 class="animate fade-in">Názory mých klientů</h2>
           <!-- Repeater field -->
           <!-- Sem ::before quotes obrazek -->
-          <div class="testimonials-grid">
-            <article class="testimonial animate staggered left-to-right">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide testimonial animate staggered left-to-right noblur">
               <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
               <div class="author">
                 <p class="strong">Bc. Pavel Zahradník</p>
                 <p>Forza Juniors</p>
               </div>
-            </article>
-            <article class="testimonial animate staggered left-to-right">
+            </div>
+            <div class="swiper-slide testimonial animate staggered left-to-right noblur">
               <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
               <div class="author">
                 <p class="strong">Bc. Pavel Zahradník</p>
                 <p>Forza Juniors</p>
               </div>
-            </article>
-            <article class="testimonial animate staggered left-to-right">
+            </div>
+            <div class="swiper-slide testimonial animate staggered left-to-right noblur">
               <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
               <div class="author">
                 <p class="strong">Bc. Pavel Zahradník</p>
                 <p>Forza Juniors</p>
               </div>
-            </article>
+            </div>
+            <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+              <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+              <div class="author">
+                <p class="strong">Bc. Pavel Zahradník</p>
+                <p>Forza Juniors</p>
+              </div>
+            </div>
+            <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+              <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+              <div class="author">
+                <p class="strong">Bc. Pavel Zahradník</p>
+                <p>Forza Juniors</p>
+              </div>
+            </div>
           </div>
           <!-- End Repeater field -->
+          <div class="swiper-pagination"></div>
         </div>
-        </div>
+      </div>
     </div>
+  </div>
   </div>
   <img class="divider-left" src="assets/divider-left.svg" alt="">
     
@@ -182,8 +212,8 @@
     <h2 class="animate left-to-right staggered">Pojďme se sejít!</h2>
     <p class="animate left-to-right staggered">Rád vám pomůžu posunout vaši online prezentaci o level výš.<br>První schůzka je zcela nezávazná a zdarma.</p>
     <div class="booking-window">
-      <div class="calendly-inline-widget" data-url="https://calendly.com/michalskoula/meeting?background_color=14161b&text_color=ffffff&primary_color=386eeb" style="min-width:100%;height:700px;max-height: 100%;"></div>
-      <script defer type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <!-- <div class="calendly-inline-widget" data-url="https://calendly.com/michalskoula/meeting?background_color=14161b&text_color=ffffff&primary_color=386eeb" style="min-width:100%;height:700px;max-height: 100%;"></div>
+      <script defer type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
       <!-- <img src="assets/vector_cta.svg" alt=" "> -->
     </div>
   </div>
@@ -241,4 +271,51 @@
     </div>
   </footer>
 </body>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".testimonialSwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+    // when window width is >= 320px
+    600: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 24
+
+    },
+    // when window width is >= 640px
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    }
+  }
+    });
+ </script>
 </html>
+<style>
+  .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+</style>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="components/testimonials.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Demo styles -->
+
+</head>
+
+<body>
+<div id="testimonials">
+  <div class="max-content-width">
+    <h2 class="animate fade-in">Názory mých klientů</h2>
+    <div class="swiper testimonialSwiper">
+    <!-- Repeater field -->
+    <!-- Sem ::before quotes obrazek -->
+    <div class="testimonials-grid swiper-wrapper">
+      <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+        <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+        <div class="author">
+          <p class="strong">Bc. Pavel Zahradník</p>
+          <p>Forza Juniors</p>
+        </div>
+      </div>
+      <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+        <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+        <div class="author">
+          <p class="strong">Bc. Pavel Zahradník</p>
+          <p>Forza Juniors</p>
+        </div>
+      </div>
+      <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+        <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+        <div class="author">
+          <p class="strong">Bc. Pavel Zahradník</p>
+          <p>Forza Juniors</p>
+        </div>
+      </div>
+      <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+        <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+        <div class="author">
+          <p class="strong">Bc. Pavel Zahradník</p>
+          <p>Forza Juniors</p>
+        </div>
+      </div>
+      <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+        <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+        <div class="author">
+          <p class="strong">Bc. Pavel Zahradník</p>
+          <p>Forza Juniors</p>
+        </div>
+      </div>
+      <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+        <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+        <div class="author">
+          <p class="strong">Bc. Pavel Zahradník</p>
+          <p>Forza Juniors</p>
+        </div>
+      </div>
+      <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+        <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+        <div class="author">
+          <p class="strong">Bc. Pavel Zahradník</p>
+          <p>Forza Juniors</p>
+        </div>
+      </div>
+      <div class="swiper-slide testimonial animate staggered left-to-right noblur">
+        <p>Spolupráce s Michalem <b>probíhala skvěle</b>, přesně se trefil do představy o vzhledu a funkcionalitě webu. Ceníme profesionální přístup a komunikaci během vytváření stránek. Můžeme jedině doporučit.</p>
+        <div class="author">
+          <p class="strong">Bc. Pavel Zahradník</p>
+          <p>Forza Juniors</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Repeater field -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+</div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".testimonialSwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+    // when window width is >= 320px
+    600: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 480px
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 24
+
+    },
+    // when window width is >= 640px
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    }
+  }
+    });
+  </script>
+</body>
+
+</html>

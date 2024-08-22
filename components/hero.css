@@ -152,7 +152,7 @@ label.btn-menu-hero img {
   #main-menu {
     position: inherit;
     display: flex;
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     width: 100vw;

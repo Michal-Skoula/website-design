@@ -5,16 +5,19 @@
   text-align: center;
   margin-bottom: var(--s700);
 }
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap:var(--s600);
-}
 .testimonial {
   border-radius: var(--border-radius);
   background-color: var(--clr-bg-testimonial);
   padding: var(--s700) var(--s600);
+  width: 100%;
 }
 .testimonial::before {
   content:url(../assets/quote-right.svg)
+}
+
+.swiper-wrapper {
+  margin-bottom: 64px;
+}
+.swiper-pagination-bullet {
+  background-color:white !important;
 }

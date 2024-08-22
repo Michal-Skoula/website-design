@@ -39,8 +39,8 @@
   position: absolute;
   top:0;
   right:0;
-  height: 1.7rem;
-  width: 1.7rem;
+  height: var(--h3);
+  width: var(--h3);
   transform: rotate(0);
   transition: transform 300ms;
 
