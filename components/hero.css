@@ -93,7 +93,7 @@
     max-width: 22rem;
   }
   #hero {
-    padding: var(--s600) var(--s400) var(--s400) var(--s400);
+    padding: var(--s900) var(--s400) var(--s400) var(--s400);
   }
   .hero-content {
     margin-top: var(--s500);

@@ -245,12 +245,15 @@ label.btn-menu-hero img {
 }
 
 @media screen and (max-width: 60rem) {
-  
+  #nav {
+    padding: var(--s600) var(--s400)
+  }
+  #nav .max-content-width {
+    padding: 0;
+  }
   #nav li:not(.menu) {  
   display: none;
   }
-
-  
   label.btn-menu-hero img {
     display: inline-block;
   }
@@ -301,5 +304,7 @@ label.btn-menu-hero img {
     top:var(--s600);
     right:var(--s400);
   }
+  
+  
   
 }
