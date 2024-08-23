@@ -11,8 +11,11 @@
   padding: var(--s700) var(--s600);
   width: 100%;
 }
+.testimonial p:first-child {
+  margin-top: var(--s300);
+}
 .testimonial::before {
-  content:url(../assets/quote-right.svg)
+  content:url(../assets/quote-right.svg);
 }
 
 .swiper-wrapper {
@@ -20,4 +23,11 @@
 }
 .swiper-pagination-bullet {
   background-color:white !important;
+}
+#testimonials .author {
+  text-align: end;
+  margin-top: var(--s300);
+}
+#testimonials .author p:first-child {
+  font-weight: 600;
 }
