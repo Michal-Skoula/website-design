@@ -67,7 +67,7 @@
     font-size: 20px;
   }
 }
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 50rem) { /* Tablet */
   :root {
     --content-padding-y : var(--s800);
     --content-padding-x: var(--s600);
@@ -280,12 +280,8 @@ label.btn-menu-hero img {
   }
 }
 @media screen and (max-width: 30rem) {
-  
   #main-menu .menu {
     top:var(--s600);
     right:var(--s400);
   }
-  
-  
-  
 }
