@@ -1,11 +1,10 @@
 #hero {
   max-width: 100%;
-  padding: var(--s800) var(--content-padding);
   z-index: 1;
   overflow: hidden;
 }
 #hero .max-content-width {
-  padding: 0 var(--s700);
+  padding-top: var(--s900);
 }
 #hero .max-content-width::before {
   content: url(../assets/particles.svg);
@@ -57,23 +56,14 @@
   /* Second button that displays under the image for mobile */
 }
 @media screen and (max-width: 60rem) {
-  #hero {
-    padding-bottom: 0;
-  }
-  #hero .max-content-width {
-    padding: 0;
-  }
   .hero-content {
-    justify-content: center;
     flex-direction: column;
     gap: var(--s400);
-    justify-self: flex-start;
-    min-width: fit-content;
   }
   #hero-img {
-    margin: 0 auto;
     width: fit-content;
     min-height: 15.625rem;
+    margin: 0 auto;
   }
   #hero-img > img {
     width: 100%;
@@ -81,7 +71,7 @@
   #hero-img::before {
     width: 100vw;
     height: 10%;
-    bottom:0;
+    bottom:var(--content-padding-y);
     left:0;
   }
 
@@ -91,9 +81,6 @@
 @media screen and (max-width: 30rem) {
   #hero .text {
     max-width: 22rem;
-  }
-  #hero {
-    padding: var(--s900) var(--s400) var(--s400) var(--s400);
   }
   .hero-content {
     margin-top: var(--s500);
@@ -113,5 +100,8 @@
   .hero-content .button-primary {
     margin-top: 0;
     margin-bottom: var(--s600)
+  }
+  #hero-img::before {
+    bottom:var(--s900);
   }
 }

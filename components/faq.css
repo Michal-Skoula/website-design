@@ -1,8 +1,4 @@
-#faq {
-  
-}
 #faq > .max-content-width {
-  padding: var(--s900) var(--s700);
   gap:var(--s600);
   display: grid;
   grid-template-columns: 4fr 5fr;
@@ -43,14 +39,11 @@
   width: var(--h3);
   transform: rotate(0);
   transition: transform 300ms;
-
 }
 .faq-card .faq-answer {
   pointer-events: none;
   opacity: 0;
   height: 0;
-  /* position: absolute; */
-  /* transition: opacity 50ms; */
 }
 .faq-card:has(input:checked) > .faq-answer {
   pointer-events: all;
@@ -62,8 +55,12 @@
 }
 .faq-card:has(input:checked) > p {
   padding-top: var(--s300);
-
 }
+#faq + .section > .max-content-width {
+  padding-top: var(--content-padding-y);
+  /* Extra padding for next section for a better looking design */
+}
+
 #faq span {
   display: inline-block;
 }
@@ -100,7 +97,6 @@ span.ico-phone::before {
   #faq > .max-content-width {
     grid-template-columns: 1fr;
     gap:var(--s700);
-    padding: var(--s800) var(--s500);
   }
   #faq h3 {
     padding-right: var(--s700);

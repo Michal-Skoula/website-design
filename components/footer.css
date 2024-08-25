@@ -1,12 +1,11 @@
 #footer .max-content-width {
+  padding-top: var(--content-padding-y);
   gap: var(--s700);
-  padding: var(--s800) var(--s600) var(--s900) var(--s600);
   max-width: 1400px;
 
 }
 #footer {
   background-color: var(--clr-footer-gradient);
-
 }
 #footer .main-body{
   gap: var(--s800);
